@@ -13,4 +13,4 @@ class Square():
     this class defines a square with it's size initalized
     """
     def __init__(self, size):
-        self.__size = size 
+        self.__size = size
