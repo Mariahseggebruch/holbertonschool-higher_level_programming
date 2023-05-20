@@ -14,6 +14,7 @@ if size is equal to 0, print an empty line
 You are not allowed to import any module
 """
 
+
 class Square:
     """Class Square that has attributes. Instantiation with size"""
 
