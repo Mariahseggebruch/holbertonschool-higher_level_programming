@@ -1,27 +1,19 @@
 #!/usr/bin/python3
-""" 0. Integers Addition - 0-add_integer.py """
+# 0-add_integer.py
+"""Defines an integer addition function."""
 
 
 def add_integer(a, b=98):
     """
-    This function adds two integers
-    or floats casted to int
+    Return sum of the arguments
 
-    Args:
-        a: first integer to add
-        b: second iteger to add
+    floats are typcasted to ints for good accpetable value
 
     Raises:
-        TypeError if a or b is not float or int
-
-    Return:
-        The result of the operation
+        TypeError: either a/b is a non-int/float.
     """
-
-    if a is None or type(a) not in [int, float] or abs(a) > float('inf'):
+    if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
-    if b is None or type(b) not in [int, float] or abs(b) > float('inf'):
+    if not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
-    a = int(a)
-    b = int(b)
-    return a + b
+    return int(a) + int(b)
